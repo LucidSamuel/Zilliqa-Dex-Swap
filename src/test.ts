@@ -7,7 +7,7 @@ import { arkMessage, arkChequeHash, hashMessage } from './utils'
 
 const key: string | undefined = process.env.PRIVATE_KEY || undefined
 const zilswap = new Zilswap(Network.TestNet, key)
-
+ 
 const test = async () => {
   // init
   await zilswap.initialize(printResults)
